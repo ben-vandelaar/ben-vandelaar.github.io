@@ -166,7 +166,6 @@ body{
 
 .recent-posts-list ul li a{
   border-bottom: 1px solid #ddd;
-
   padding: 0.5em 0;
   box-sizing: inherit;
   font-size: 1em;
@@ -174,8 +173,18 @@ body{
 }
 
 .bottom-nav {
+  display: flex;
+  flex-direction: row;
   padding: 50px;
   font-weight: 200;
   font-size: 2em;
   text-align: right;
+}
+
+.next-previous{
+flex: 1;
+}
+
+.home{
+flex: 1;
 }
