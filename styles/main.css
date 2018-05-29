@@ -45,38 +45,84 @@ body{
   line-height: 0px;
 }
 
-.wrapper{
-  clear: both;
-  max-width: 1000px;
-  padding-left: 3em;
-  padding-right: 3em;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  box-sizing: inherit;
-  display: block;
-}
-
-
 #posts{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  padding-left: 5em;
+  padding-right: 3em;
   text-align:left;
-  padding-left: 20px; 
   padding-top: 50px;
   font-size: 1em;
   font-weight: 1000;
   letter-spacing: 0.1818em;
 }
-.content{
-  float: left;
-  width: 70%;
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: auto;
-  text-align:left;
-  max-width:700px;
+
+.content-wrapper{
+  height:200vh;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.right-sidebar{
+
+  float: right;
+  margin-right: 5%;
+  margin-top: 100px;
+  width: 155px;
+}
+
+.search-bar{
+  padding-bottom: 20px;
+}
+
+.search-bar input{
+  margin: 0px;
+  padding: 0px;
+  height: 33px;
+  width:150px;
+  
+}
+
+.recent-posts-list {
+  text-align: left;
+}
+
+.recent-posts-list h4{
+  font-size: 1em;
+  margin-bottom: 2em;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+}
+
+.recent-posts-list ul{
+  list-style-type: none;
+  margin-left: -2px;
+}
+
+.recent-posts-list ul li a{
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+  box-sizing: inherit;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+
+.sticky{
+  position: sticky;
+  top: 50px;
+}
+
+.content {
+  width: 95%;
   display: flex;
   flex-direction: column;
+  text-align:left;
+  margin: auto;
 }
 
 .content a {
@@ -125,66 +171,9 @@ body{
 }
 
 
-.right-container{
-  display:flex;
-  float: right;
-  padding-top: 0;
-  width: 25%;
-  flex-direction: column;
-}
-
-.search-bar{
-  padding-bottom: 20px;
-}
-
-.search-bar input{
-  flex: 1;
-  margin: 0px;
-  padding: 0px;
-  height: 35px;
-  width:100%;
-  
-}
-
-
-.recent-posts-list {
-  flex:2;
-  text-align: left;
-}
-
-.recent-posts-list h4{
-  font-size: 1em;
-  margin-bottom: 2em;
-  font-weight: 800;
-  letter-spacing: 0.1818em;
-}
-
-.recent-posts-list ul{
-  list-style-type: none;
-  margin-left: -2px;
-}
-
-.recent-posts-list ul li a{
-  border-bottom: 1px solid #ddd;
-  padding: 0.5em 0;
-  box-sizing: inherit;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-.bottom-nav {
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-  font-weight: 200;
-  font-size: 2em;
-  text-align: right;
-}
-
-.next-previous{
-flex: 1;
-}
-
-.home{
-flex: 1;
+.clear {
+  clear:both;
+  margin-top:-1px;
+  height:1px;
+  overflow:hidden;
 }
