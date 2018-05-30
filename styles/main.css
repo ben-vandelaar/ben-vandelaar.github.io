@@ -23,7 +23,20 @@ body{
   background-size: cover;
 }
 
-.header .DOM
+.blogHeader{
+  width: 100%;
+  padding: 0px;
+  height:700px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.DOM {
+  background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/DOM.gif?raw=true');
+}
 
 .overlay{
   width: 100%;
