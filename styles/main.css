@@ -23,6 +23,8 @@ body{
   background-size: cover;
 }
 
+.header .DOM
+
 .overlay{
   width: 100%;
   padding: 0px;
@@ -112,6 +114,7 @@ body{
 }
 
 
+
 .sticky{
   position: sticky;
   top: 50px;
@@ -169,6 +172,13 @@ body{
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
 }
+
+.content-block-05{
+  flex: 4;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+}
+
 
 
 .clear {
