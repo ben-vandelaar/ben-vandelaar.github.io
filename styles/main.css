@@ -192,6 +192,12 @@ body{
   padding-top: 10px;
 }
 
+.content-block-06{
+  flex: 5;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+}
+
 
 
 .clear {
