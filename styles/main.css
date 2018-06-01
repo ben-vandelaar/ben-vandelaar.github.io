@@ -1,140 +1,71 @@
+/**
+ * CONTENTS
+ *
+ * Global Settings
+ *
+ * 
+ *
+ *
+ */
+
+*{
+  margin: 0;
+}
+
 body{
-  position: relative;
-  font-family:'Raleway', Helvetica, sans-serif;
-  font-size: 16px;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
   background-color: white;
   color: black;
-  word-wrap: break-word;
-  display: block;
+  font-family: 'Quicksand','Open Sans', sans-serif;
 }
 
 .header{
+  height: 700px;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.overlay {
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px;
+}
+
+.index{
   background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/benByWater.jpg?raw=true');
-  width: 100%;
-  padding: 0px;
-  height:700px;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-.blogHeader{
-  width: 100%;
-  padding: 0px;
-  height:700px;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.DOM {
-  background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/DOM.gif?raw=true');
-}
-
-.meditation {
-  background-image: url('https://raw.githubusercontent.com/ben-vandelaar/ben-vandelaar.github.io/master/imgs/guybyCliff.jpg');
-}
-
-.overlay{
-  width: 100%;
-  padding: 0px;
-  height:700px;
-  background-color:rgb(0,0,0,0.4);
-}
-
-.title-text{
+.head-title{
   color: white;
-  text-align: center;
-  padding-top: 600px;
-  padding-right: 700px;
-  font-size: 1.5em;
-  line-height: 0px;
+  margin-bottom: 1%;
+  margin-left: 15%;
 }
 
-.title-text h2{
-  padding-left: 200px;
-  font-size: 1em;
-  line-height: 0px;
-}
-
-#posts{
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1000px;
-  padding-left: 5em;
-  padding-right: 3em;
-  text-align:left;
-  padding-top: 50px;
-  font-size: 1em;
-  font-weight: 1000;
-  letter-spacing: 0.1818em;
+.head-title h1 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 25px;
 }
 
 .content-wrapper{
   height:200vh;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px;
+  max-width: 960px;
   padding-left: 3em;
   padding-right: 3em;
+ }
+ 
+
+.post-title{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2.5em;
+  margin-bottom: 2.5em;
 }
 
-.right-sidebar{
-
-  float: right;
-  margin-right: 5%;
-  margin-top: 100px;
-  width: 155px;
-}
-
-.search-bar{
-  padding-bottom: 20px;
-}
-
-.search-bar input{
-  margin: 0px;
-  padding: 0px;
-  height: 33px;
-  width:150px;
-  
-}
-
-.recent-posts-list {
-  text-align: left;
-}
-
-.recent-posts-list h4{
-  font-size: 1em;
-  margin-bottom: 2em;
-  font-weight: 800;
-  letter-spacing: 0.1818em;
-}
-
-.recent-posts-list ul{
-  list-style-type: none;
-  margin-left: -2px;
-}
-
-.recent-posts-list ul li a{
-  border-bottom: 1px solid #ddd;
-  padding: 0.5em 0;
-  box-sizing: inherit;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-
-
-.sticky{
-  position: sticky;
-  top: 50px;
+.post-title h2{
+  font-weight: 200;
 }
 
 .content {
@@ -143,76 +74,76 @@ body{
   flex-direction: column;
   text-align:left;
   margin: auto;
-}
-
-.content a {
+ }
+ 
+ .content a {
   color: #333;
   text-decoration: none;
+  margin-top: 20px;
   margin-left: -2px;
   transition: all 1000ms;
   -webkit-transition: all 1000ms;
   -moz-transition: all 1000ms;
   -o-transition: all 1000ms;
-}
-
-.content img{
+ }
+ 
+ .content img{
   height:auto;
   width: 100%;
   box-sizing: inherit;
-}
-
-.content a:hover{
+  margin-bottom: 50px;
+ }
+ 
+ .content a:hover{
  text-decoration-line: underline;
-
-}
-
-.content-block-01{
+ }
+ 
+ .content-block-01{
   flex: 1;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-.content-block-02{
+ }
+ 
+ .content-block-02{
   flex: 2;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-.content-block-03{
+ }
+ 
+ .content-block-03{
   flex: 3;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-.content-block-04{
+ }
+ 
+ .content-block-04{
   flex: 4;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-.content-block-05{
+ }
+ 
+ .content-block-05{
   flex: 4;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-.content-block-06{
+ }
+ 
+ .content-block-06{
   flex: 5;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-.content-block-07{
+ }
+ 
+ .content-block-07{
   flex: 5;
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
-}
-
-
-
-.clear {
+ }
+ 
+ .clear {
   clear:both;
   margin-top:-1px;
   height:1px;
   overflow:hidden;
-}
+ }
+ 
