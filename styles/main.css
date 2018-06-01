@@ -38,6 +38,10 @@ body{
   background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/DOM.gif?raw=true');
 }
 
+.meditation {
+  background-image: url('https://raw.githubusercontent.com/ben-vandelaar/ben-vandelaar.github.io/master/imgs/guybyCliff.jpg');
+}
+
 .overlay{
   width: 100%;
   padding: 0px;
