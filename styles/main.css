@@ -3,9 +3,10 @@
  *
  * Global Settings
  *
- * 
- *
- *
+ * Header
+ * Content
+ * Right Side bar
+ * Clear 
  */
 
 *{
@@ -17,6 +18,17 @@ body{
   color: black;
   font-family: 'Quicksand','Open Sans', sans-serif;
 }
+
+a {
+  color: #333;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: -2px;
+  transition: all 1000ms;
+  -webkit-transition: all 1000ms;
+  -moz-transition: all 1000ms;
+  -o-transition: all 1000ms;
+ }
 
 .header{
   height: 700px;
@@ -33,6 +45,14 @@ body{
 
 .index{
   background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/benByWater.jpg?raw=true');
+}
+
+.reflection{
+  background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/guybyCliff.jpg?raw=true');
+}
+
+.tech {
+  background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/DOM.gif?raw=true');  
 }
 
 .head-title{
@@ -76,16 +96,6 @@ body{
   margin: auto;
  }
  
- .content a {
-  color: #333;
-  text-decoration: none;
-  margin-top: 20px;
-  margin-left: -2px;
-  transition: all 1000ms;
-  -webkit-transition: all 1000ms;
-  -moz-transition: all 1000ms;
-  -o-transition: all 1000ms;
- }
  
  .content img{
   height:auto;
@@ -140,10 +150,45 @@ body{
   padding-top: 10px;
  }
  
+ .right-sidebar{
+  float: right;
+ }
+
+ .recent-posts-list {
+  text-align: left;
+ }
+ 
+ .recent-posts-list h4{
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+ }
+ 
+ .recent-posts-list ul{
+  list-style-type: none;
+  margin-left: -2px;
+ }
+
+ .recent-posts-list ul li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+ }
+ 
+ .sticky{
+  position: sticky;
+  top: 50px;
+ }
+ 
  .clear {
   clear:both;
   margin-top:-1px;
   height:1px;
   overflow:hidden;
  }
- 
+
+footer p {
+  margin-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #aaa;
+}
