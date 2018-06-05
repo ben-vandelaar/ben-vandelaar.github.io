@@ -55,6 +55,10 @@ a {
   background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/master/imgs/DOM.gif?raw=true');  
 }
 
+.time {
+  background-image: url('https://github.com/ben-vandelaar/ben-vandelaar.github.io/blob/TidyUp/imgs/calendar-app-business-time-management-workspace-picjumbo-com.jpg?raw=true')
+}
+
 .head-title{
   color: white;
   margin-bottom: 1%;
