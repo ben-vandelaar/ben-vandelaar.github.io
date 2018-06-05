@@ -7,6 +7,9 @@
  * Content
  * Right Side bar
  * Clear 
+ *
+ *
+ * CSS Drawing and animation
  */
 
 *{
@@ -153,6 +156,13 @@ a {
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
  }
+
+ .content-block-08{
+  flex: 5;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+ }
+ 
  
  .right-sidebar{
   float: right;
@@ -196,3 +206,6 @@ footer p {
   padding-right: 10px;
   border-right: 1px solid #aaa;
 }
+
+
+
