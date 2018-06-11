@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: #fff;
+    height: 100%;
+}
+
+.header{
+    background-image: url(../imgs/calendar-app-business-time-management-workspace-picjumbo-com.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80%;
+
+    background-attachment: fixed;
+
+}
+
+h2{
+    margin-top: 5rem;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100px;
+    padding: 10px 200px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding:0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #151515;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.about{
+    text-align: center;
+}
+
+.work{
+    text-align: center;
+}
+
+.portfolio{
+    background-color: #464950;
+    background-size: cover;
+    padding-top: .5rem;
+
+}
+
+.imgs img{
+    margin-bottom: 10%;
+}
+
+.clear {
+    clear:both;
+    margin-top:-1px;
+    height:1px;
+    overflow:hidden;
+   }
+  
+  footer{
+    display: inline;
+    text-align: center;
+    border-right: 1px solid #aaa;
+  }
+  
+  
+  
+  
