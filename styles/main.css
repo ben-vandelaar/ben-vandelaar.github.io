@@ -10,19 +10,50 @@ html{
 body{
     background: #fff;
     height: 100%;
+    overflow-x: hidden;
 }
 
-.header{
-    background-image: url(../imgs/calendar-app-business-time-management-workspace-picjumbo-com.jpg);
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 80%;
-
-    background-attachment: fixed;
-
+.vheader{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
+
+.vcontainer{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.overlay{
+    height:80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #464950;
+    z-index: 1;
+    opacity:0.4;
+}
+
+
 
 h2{
     margin-top: 5rem;

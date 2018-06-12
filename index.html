@@ -13,27 +13,36 @@
 <body>
     
     <section class="section header">
-        <div class="container">
-            <div class="row">
-                <h1 class="heading">benvandelaar</h1>
-                <div class="nav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="vcontainer vheader">
+
+                    <div class="fullscreen-video-wrap">
+                        <video src="imgs/Clouds.mp4" autoplay="true" loop="true" muted="true"></video>
+                    </div>
+                    
+                    <div class="overlay"></div>
+                    
+                    <div class="header-content">
+
+                    <h1 class="heading">benvandelaar</h1>
+
+                        <div class="nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="#top">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="blogIndex.html">Blog</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#work">Portfolio</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <section class="section about">
         <div class="container">
-            <div class="row">
+            <div class="row" id="about">
                 <h2 class="heading about">about</h2>
                 <p class="about-text">
                         I have worked as an artist in 3D and VFX for the last 6 years working on such productions as Spartacus War of the Damned and the Wellington produced show Thunderbirds Are GO!
@@ -48,7 +57,7 @@
 
     <section class="section portfolio">
             <div class="container">
-                <div class="row">
+                <div class="row" id="work">
                     <h2 class="heading work">work</h2>
                         <div class="imgs">
                             <div class="one-third column">
@@ -80,8 +89,8 @@
         
     <section class="section CTA">
         <div class="container">
-            <div class="row">
-                <h2 class="heading work">Contact</h2>
+            <div class="row" id="contact">
+                <h2 class="heading contact">Contact</h2>
                 <form>
                     <div class="row">
                         <div class="columns">
