@@ -162,7 +162,30 @@ a {
   border-bottom: 1px solid #aaa;
   padding-top: 10px;
  }
+
+ .content-block-09{
+  flex: 5;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+ }
+
+ .content-block-10{
+  flex: 5;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+ }
+
+ .content-block-11{
+  flex: 5;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+ }
  
+ .content-block-12{
+  flex: 5;
+  border-bottom: 1px solid #aaa;
+  padding-top: 10px;
+ }
  
  .right-sidebar{
   float: right;
