@@ -104,7 +104,52 @@ $(document).ready(function() {
         for (var i = 0; i < asteroidsLength; i++) {
             
             var tmpAsteroid = asteroids[i];
+
+            //Collision Detection
             
+            for (var j = i+1; j < asteroidsLength; j++) {
+                var tmpAsteroidB = asteroids[j];
+                var dX = tmpAsteroidB.x - tmpAsteroid.x;
+                var dY = tmpAsteroidB.y - tmpAsteroid.y;
+                var distance = Math.sqrt((dX*dX)+(dY*dY)); 
+
+            if (distance < tmpAsteroid.radius + tmpAsteroidB.radius) {
+                
+                var angle = Math.atan2(dY, dX);
+                var sine = Math.sin(angle);     
+                var cosine = Math.cos(angle);
+                
+                var x = 0;
+                var y = 0;
+
+                var xB = dX * cosine + dY * sine;
+                var yB = dY * cosine - dX * sine;
+
+                var vX = tmpAsteroid.vX * cosine + tmpAsteroid.vY * sine;
+                var vY = tmpAsteroid.vY * cosine - tmpAsteroid.vX * sine;
+
+                var vXb = tmpAsteroidB.vX * cosine + tmpAsteroidB.vY * sine;
+                var vYb = tmpAsteroidB.vY * cosine - tmpAsteroidB.vX * sine; 
+
+                vX *= -1;
+                vXb *= -1;
+
+                xB = x + (tmpAsteroid.radius + tmpAsteroidB.radius); 
+
+                tmpAsteroid.x = tmpAsteroid.x + (x * cosine - y * sine);
+                tmpAsteroid.y = tmpAsteroid.y + (y * cosine + x * sine);
+                tmpAsteroidB.x = tmpAsteroid.x + (xB * cosine - yB * sine);
+                tmpAsteroidB.y = tmpAsteroid.y + (yB * cosine + xB * sine);
+                tmpAsteroid.vX = vX * cosine - vY * sine;
+                tmpAsteroid.vY = vY * cosine + vX * sine; 
+                tmpAsteroidB.vX = vXb * cosine - vYb * sine;
+                tmpAsteroidB.vY = vYb * cosine + vXb * sine; 
+
+
+            }; 
+
+        };
+
             //Velocity
             
             tmpAsteroid.x += tmpAsteroid.vX;
