@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     //Create 10 Asteroids Push them into the array
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 20; i++) {
         
         //Location
         var x = 20+(Math.random()*(canvasWidth-40));
@@ -145,7 +145,10 @@ $(document).ready(function() {
                 tmpAsteroidB.vX = vXb * cosine - vYb * sine;
                 tmpAsteroidB.vY = vYb * cosine + vXb * sine; 
 
-
+                var vTotal = vX - vXb;
+                vX = ((tmpAsteroid.mass - tmpAsteroidB.mass) * vX + 2 * tmpAsteroidB.mass * vXb) /
+                (tmpAsteroid.mass + tmpAsteroidB.mass);
+                vXb = vTotal + vX;
             }; 
 
         };
