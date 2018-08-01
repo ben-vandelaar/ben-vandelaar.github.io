@@ -134,7 +134,7 @@ $(document).ready(function() {
                 vX *= -1;
                 vXb *= -1;
 
-                xB = x + (tmpAsteroid.radius + tmpAsteroidB.radius); 
+                //xB = x + (tmpAsteroid.radius + tmpAsteroidB.radius); 
 
                 tmpAsteroid.x = tmpAsteroid.x + (x * cosine - y * sine);
                 tmpAsteroid.y = tmpAsteroid.y + (y * cosine + x * sine);
